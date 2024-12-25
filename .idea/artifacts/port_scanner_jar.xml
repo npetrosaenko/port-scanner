@@ -2,7 +2,11 @@
   <artifact type="jar" name="port-scanner:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/port_scanner_jar</output-path>
     <root id="archive" name="port-scanner.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="port-scanner" />
+      <element id="directory" name="folder" />
     </root>
   </artifact>
 </component>

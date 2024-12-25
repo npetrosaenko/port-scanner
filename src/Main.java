@@ -3,6 +3,7 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -13,8 +14,10 @@ public class Main {
     private static final int MIN_PORT_NUMBER = 0;
     private static final int MAX_PORT_NUMBER = 65535;
     public static void main(String[] args) throws InterruptedException, UnknownHostException {
-
-    scan("housefan.ru");
+      Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter domen: ");
+       String a =  scanner.nextLine();
+       scan(a);
 
     }
     private static void scan(String host) throws InterruptedException, UnknownHostException {
